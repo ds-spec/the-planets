@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
+
+body {
+  background-color: #111;
+}
+
+/* Add Bellina Font */
+@font-face {
+  font-family: "Bellina";
+  src: url("./fonts/Bellina.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Add Gilroy Font */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example usage:
+body {
+  font-family: 'Bellina', 'Gilroy', 'Stack Sans Headline', sans-serif;
+}
+*/
+
+.planets,
+.font-a {
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+.earth {
+  font-family: "Bellina";
+}
+
+.font-lorem {
+  font-family: "Gilroy";
+}

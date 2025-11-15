@@ -3,12 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
-
+    <div class="w-full h-screen overflow-hidden">
+      <div class="w-full h-screen text-white absolute top-0 left-0 z-[2]">
+        <nav class="flex justify-between px-8 py-6">
+          <h4 class="planets text-md">Planets</h4>
+          <div class="flex items-center gap-5 font-a">
+            <a class="text-md" href="#">Home</a>
+            <a class="text-md" href="#">Contact</a>
+            <a class="text-md" href="#">Pricing</a>
+          </div>
+        </nav>
+        <div
+          class="flex flex-col items-center absolute left-1/2 -translate-x-1/2 z-[2]"
+        >
+          <h1 class="text-8xl earth tracking-tighter">Earth</h1>
+          <h3 class="text-xs font-lorem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </h3>
+          <div
+            class="w-96 h-[0.8px] bg-gradient-to-r from-transparent via-white/80 to-transparent mt-1 mb-2"
+          ></div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>

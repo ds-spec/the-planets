@@ -2,10 +2,8 @@ import * as THREE from "three";
 import { RGBELoader } from "three/examples/jsm/Addons.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-// Get the canvas element
 const canvas = document.getElementById("canvas");
 
-// Create a renderer and set its size and pixel ratio
 const renderer = new THREE.WebGLRenderer({
   canvas,
   antialias: true, // it basically smoothens the edges
@@ -14,12 +12,10 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
-// Create a scene
 const scene = new THREE.Scene();
 
-// Create a camera
 const camera = new THREE.PerspectiveCamera(
-  25,
+  28,
   window.innerWidth / window.innerHeight,
   0.1,
   1000
@@ -43,7 +39,6 @@ scene.add(starSphere);
 const radius = 1;
 const segments = 64;
 const orbitRadius = 3;
-// const colors = ["#FF5733", "#33C1FF", "#6DFF33", "#FF33F6"];
 const alphaTextures = [
   "./csilla/color.png",
   "./earth/map.jpg",
@@ -78,11 +73,10 @@ for (let i = 0; i < 4; i++) {
   spheres.add(sphere);
 }
 
-spheres.rotation.x = 0.2;
-spheres.position.y = -0.2;
+spheres.rotation.x = 0.15;
+spheres.position.y = -0.4;
 scene.add(spheres);
 
-// Handle resizing
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -91,7 +85,6 @@ window.addEventListener("resize", () => {
   renderer.setPixelRatio(window.devicePixelRatio);
 });
 
-// Animation loop
 function animate() {
   requestAnimationFrame(animate);
   controls.update();
