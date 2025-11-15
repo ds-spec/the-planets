@@ -9,7 +9,15 @@
   </head>
   <body>
     <div class="w-full h-screen overflow-hidden">
-      <div class="w-full h-screen text-white absolute top-0 left-0 z-[2]">
+      <div
+        class="loader-div w-full h-screen flex flex-col items-center justify-center text-white"
+      >
+        <h1 class="text-9xl loader-h1 shadow-xl font-bold"></h1>
+        <div class="w-1 bg-red-100 h-[2px] origin-center animate-width"></div>
+      </div>
+      <div
+        class="opacity-0 planets-div overflow-hidden w-full h-screen text-white absolute top-0 left-0 z-[2]"
+      >
         <nav class="flex justify-between px-8 py-6">
           <h4 class="planets text-md">Planets</h4>
           <div class="flex items-center gap-5 font-a">
@@ -19,11 +27,17 @@
           </div>
         </nav>
         <div
-          class="flex flex-col items-center absolute left-1/2 -translate-x-1/2 z-[2]"
+          class="flex flex-col headings-div items-center text-center absolute left-1/2 -translate-x-1/2 z-[2]"
         >
-          <h1 class="text-8xl earth tracking-tighter">Earth</h1>
+          <div class="w-full h-[6em] overflow-hidden">
+            <h1 class="text-8xl earth headings tracking-tighter">Earth</h1>
+            <h1 class="text-8xl earth headings tracking-tighter">Csilla</h1>
+            <h1 class="text-8xl earth headings tracking-tighter">Volcanic</h1>
+            <h1 class="text-8xl earth headings tracking-tighter">Venus</h1>
+          </div>
           <h3 class="text-xs font-lorem">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exploring worlds beyond our own reveals wonders shaped by time,
+            light, motion, and cosmic mystery.
           </h3>
           <div
             class="w-96 h-[0.8px] bg-gradient-to-r from-transparent via-white/80 to-transparent mt-1 mb-2"
