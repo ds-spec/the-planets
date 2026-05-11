@@ -8,7 +8,7 @@ body {
 /* Add Bellina Font */
 @font-face {
   font-family: "Bellina";
-  src: url("./fonts/Bellina.ttf") format("truetype");
+  src: url("/fonts/Bellina.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@ body {
 /* Add Gilroy Font */
 @font-face {
   font-family: "Gilroy";
-  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  src: url("/fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@ body {
 
 @font-face {
   font-family: "Varino";
-  src: url("./fonts/Varino-Normal.ttf") format("truetype");
+  src: url("/fonts/Varino-Normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
